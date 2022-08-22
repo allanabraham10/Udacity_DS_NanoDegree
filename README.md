@@ -2,8 +2,10 @@
 This is a repository for the projects I had to work on whilst completing a Nano Degree course from Udacity
 
 Project 1:
-Medium Blog - https://medium.com/@pa.allan10/seattle-airbnb-dataset-insights-cef8acc069e2
 AirBnB Seattle Dataset
+
+Medium Blog - https://medium.com/@pa.allan10/seattle-airbnb-dataset-insights-cef8acc069e2
+
 
 The underlying datasources comprised of the prices of airbnbs since listing, the listing details - geo, owner and ratings details and finally a review file with the comments received for each listing
 
