@@ -28,6 +28,17 @@ from sklearn.ensemble import AdaBoostClassifier
 warnings.simplefilter('ignore')
 
 def load_data(database_filepath):
+    
+    """Load & merge messages & categories datasets
+    
+    inputs:
+    messages_filepath:Filepath for csv file containing messages dataset.
+    categories_filepath: Filepath for csv file containing categories dataset.
+       
+    outputs:
+    df: dataframe, containing merged content of messages & categories datasets.
+    """
+    
     engine = create_engine('sqlite:///'+database_filepath)
     df= pd.read_sql_table('DisasterResponse', engine)
     X = df.message
@@ -37,6 +48,16 @@ def load_data(database_filepath):
 
 
 def tokenize(text):
+    
+    """Clean the text input
+    
+    inputs:
+    text
+       
+    outputs:
+    normalized, lemmatized useful words from the text input
+    """
+    
     # Converting everything to lower case
     text = re.sub(r"[^a-zA-Z0-9]", " ", text.lower())
     
@@ -53,6 +74,13 @@ def tokenize(text):
 
 
 def build_model():
+    
+    """Build and Call the ML model
+       
+    outputs:
+    returns the custom model that we have build for the usecase 
+    """
+    
     pipeline = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
@@ -74,6 +102,17 @@ def build_model():
 
 
 def evaluate_model(model, X_test, Y_test):
+    
+    """Checks the model performance
+    
+    inputs:
+    model that we have built
+    Test sets from the sample
+       
+    outputs:
+    classification report for the parameters 
+    """
+    
     Y_pred=model.predict(X_test)
 
     for i in range(36):
@@ -82,6 +121,17 @@ def evaluate_model(model, X_test, Y_test):
 
 
 def save_model(model, model_filepath):
+    
+    """Saving the tested model as a pickle file
+    
+    inputs:
+    model that we have tested
+    filepath for the output
+       
+    outputs:
+    a pickle file for the model
+    """
+    
     pickle.dump(model.best_estimator_, open(model_filepath, 'wb'))
 
 
