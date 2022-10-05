@@ -5,25 +5,30 @@ In this project I built a model for an API that classifies disaster messages. Th
 ## File Description
 
 disaster_response_pipeline
+
           |-- app
                 |-- templates
                         |-- go.html
                         |-- master.html
                 |-- run.py
+                
           |-- data
                 |-- disaster_message.csv
                 |-- disaster_categories.csv
                 |-- DisasterResponse.db
                 |-- process_data.py
+                
           |-- models
                 |-- classifier.pkl
                 |-- train_classifier.py
-          |-- Preparation
+                
+          |-- Notebooks
                 |-- categories.csv
                 |-- ETL Pipeline Preparation.ipynb
                 |-- ETL_Preparation.db
                 |-- messages.csv
                 |-- ML Pipeline Preparation.ipynb
+                
           |-- README
 
 ## Installations
