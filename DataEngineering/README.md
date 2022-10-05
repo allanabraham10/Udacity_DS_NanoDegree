@@ -2,6 +2,29 @@
 
 In this project I built a model for an API that classifies disaster messages. The datasets provided by Figure Eight contain real messages sent during disaster events and their respective categories. The task was to train the supervised ML classifier to automate categorization of the new messages so that different disaster relief agencies would receive only relevant ones.
 
+## File Description
+
+disaster_response_pipeline
+          |-- app
+                |-- templates
+                        |-- go.html
+                        |-- master.html
+                |-- run.py
+          |-- data
+                |-- disaster_message.csv
+                |-- disaster_categories.csv
+                |-- DisasterResponse.db
+                |-- process_data.py
+          |-- models
+                |-- classifier.pkl
+                |-- train_classifier.py
+          |-- Preparation
+                |-- categories.csv
+                |-- ETL Pipeline Preparation.ipynb
+                |-- ETL_Preparation.db
+                |-- messages.csv
+                |-- ML Pipeline Preparation.ipynb
+          |-- README
 
 ## Installations
 Here are the different packages used for this project:
