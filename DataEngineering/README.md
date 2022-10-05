@@ -56,6 +56,7 @@ There are several ways to handle imbalanced dataset with resampling being one of
 Since it is a multilabel classification task (meaning we assign simulteniously several labels to a message which are not mutually exclusive), I am not sure if we need to artificially increase the prediction of certain labels. We risk having more false positives in this case, which means bad allocation of resources especially during disasters. For a disaster response project, I believe it is more important for the model to be able to discern relevant messages from irrelevant ones and perform some high-level categorization well (e.g. earthquake vs flood).
 
 ## Screenshots
+![image](https://user-images.githubusercontent.com/69242466/194048400-d7d9aeae-88be-4afe-b767-59d1284142db.png)
 
 
 ## Acknowledgements
