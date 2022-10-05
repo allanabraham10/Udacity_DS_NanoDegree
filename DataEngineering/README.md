@@ -4,7 +4,12 @@ In this project I built a model for an API that classifies disaster messages. Th
 
 
 ## Installations
-$ pip install -r requirements.txt
+Here are the different packages used for this project:
+
+- Numpy, Pandas, Sklearn
+- NLTK
+- SQLalchemy
+- Flask, Plotly
 
 ## Instructions:
 Run the following commands in the project's root directory to set up the database and model.
