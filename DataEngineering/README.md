@@ -1,13 +1,12 @@
-Disaster Response Project
+## Disaster Response Project
+
 In this project I built a model for an API that classifies disaster messages. The datasets provided by Figure Eight contain real messages sent during disaster events and their respective categories. The task was to train the supervised ML classifier to automate categorization of the new messages so that different disaster relief agencies would receive only relevant ones.
 
-Deployment
-https://disaster-reponse-api.herokuapp.com
 
-Requirements
+# Installations
 $ pip install -r requirements.txt
 
-Instructions:
+# Instructions:
 Run the following commands in the project's root directory to set up the database and model.
 
 To run ETL pipeline that cleans data and stores in database
@@ -19,7 +18,7 @@ localhost=1 python run.py
 
 Go to http://0.0.0.0:3001/
 
-Results
+# Results
 Step 1: ETL Pipeline
 
 Loaded the messages and categories datasets (disaster_messages.csv, disaster_categories.csv)
@@ -53,5 +52,5 @@ Since it is a multilabel classification task (meaning we assign simulteniously s
 
 As such, the model trained in this project does just that. It has relatively high f1_score on 'relevant', 'aid_related', 'weather_related' categories (0.89, 0.71, 0.77 respectively for positive instances) and can discriminate between earthquake/flood/storm messages well (with f1_score scores being 0.83, 0.67, 0.66 respectively). It also identifies messages related to water, shelter, food, clothing relatively well (0.67, 0.63, 0.79, 0.49).
 
-Acknowledgements
-This project is part of Udacity Data Science Nanodegree Programm.
+# Acknowledgements
+Thanks to Udacity Data Science Nanodegree Program instructors and the materials shared that helped me complete this project and have a thorough understanding of Data Engineering.
