@@ -17,6 +17,7 @@ Run the following commands in the project's root directory to set up the databas
 To run ETL pipeline that cleans data and stores in database
 python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
 To run ML pipeline that trains classifier and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+
 Run the following command to start the server locally:
 localhost=1 python run.py
 
@@ -54,7 +55,8 @@ There are several ways to handle imbalanced dataset with resampling being one of
 
 Since it is a multilabel classification task (meaning we assign simulteniously several labels to a message which are not mutually exclusive), I am not sure if we need to artificially increase the prediction of certain labels. We risk having more false positives in this case, which means bad allocation of resources especially during disasters. For a disaster response project, I believe it is more important for the model to be able to discern relevant messages from irrelevant ones and perform some high-level categorization well (e.g. earthquake vs flood).
 
-As such, the model trained in this project does just that. It has relatively high f1_score on 'relevant', 'aid_related', 'weather_related' categories (0.89, 0.71, 0.77 respectively for positive instances) and can discriminate between earthquake/flood/storm messages well (with f1_score scores being 0.83, 0.67, 0.66 respectively). It also identifies messages related to water, shelter, food, clothing relatively well (0.67, 0.63, 0.79, 0.49).
+## Screenshots
+
 
 ## Acknowledgements
 Thanks to Udacity Data Science Nanodegree Program instructors and the materials shared that helped me complete this project and have a thorough understanding of Data Engineering.
