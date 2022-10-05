@@ -16,8 +16,7 @@ Run the following commands in the project's root directory to set up the databas
 
 To run ETL pipeline that cleans data and stores in database
 python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-To run ML pipeline that trains classifier and saves it as gzip pickle object
-python models/train_classifier.py data/DisasterResponse.db models/model.p.gz
+To run ML pipeline that trains classifier and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
 Run the following command to start the server locally:
 localhost=1 python run.py
 
