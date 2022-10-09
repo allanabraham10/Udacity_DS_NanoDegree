@@ -15,12 +15,16 @@ List of packages used:
 The project contains the following tasks:
 
 Exploratory Data Analysis: This part is for data exploration.
+Rank Based Recommendations: recommended the most popular articles based on the highest user interactions
+User-User Based Collaborative Filtering: recommended unseen articles that were viewed by most similar users
+Content Based Recommendations: recommended articles based on similarity of content
+Matrix Factorization: performed SVD to predict articles a user might interact with
 
-Rank Based Recommendations: Here, I begin by finding the most popular articles based on the most interactions. These articles are the ones that we might recommend to new users.
+## File Descriptions
+You can find the results of the analysis in either html form and Jupyter Notebook:
 
-User-User Based Collaborative Filtering: In order to give better recommendations to the users of IBM's platform, I examine users that are similar in terms of the items they have interacted with. These items could then be recommended to similar users.
-
-Matrix Factorization: For the final step, I created a machine learning approach to building recommendations. Using the user-item interactions, I built out a matrix decomposition which helps me in predicting new articles an individual might interact with .
+1. Recommendations_with_IBM.html
+2. Recommendations_with_IBM.ipynb
 
 ## Acknowledgement
 I would like to acknowledge and thank Udacity for giving me the chance to work on this project. I would also like to thanks IBM for providing the data.
