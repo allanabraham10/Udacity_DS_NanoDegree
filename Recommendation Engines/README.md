@@ -3,7 +3,7 @@
 ## Overview
 This project was designed to analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles that they might be interested in.
 
-##Packages
+## Packages
 List of packages used:
 
 - Matplotlib
@@ -11,7 +11,7 @@ List of packages used:
 - Pandas
 - Pickle
 
-##Summary:
+## Summary:
 The project contains the following tasks:
 
 Exploratory Data Analysis: This part is for data exploration.
@@ -22,5 +22,5 @@ User-User Based Collaborative Filtering: In order to give better recommendations
 
 Matrix Factorization: For the final step, I created a machine learning approach to building recommendations. Using the user-item interactions, I built out a matrix decomposition which helps me in predicting new articles an individual might interact with .
 
-#Acknowledgement
+## Acknowledgement
 I would like to acknowledge and thank Udacity for giving me the chance to work on this project. I would also like to thanks IBM for providing the data.
