@@ -2,6 +2,13 @@
 
 ![image](https://user-images.githubusercontent.com/69242466/195322414-c73d1402-3353-43c1-8cda-4539fd19d6d2.png)
 
+## Installations
+Here are the different packages used for this project:
+
+Numpy, Pandas, Sklearn
+
+Matplotlib, Seaborn. Json
+
 ## Overview and Motivation
 
 Starbucks, one of the world’s most popular coffee shops, frequently provides offers to its customers through its rewards app to drive more sales. These offers can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free).
