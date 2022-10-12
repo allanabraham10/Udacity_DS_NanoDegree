@@ -58,7 +58,7 @@ The LGBM Classifier not only scored the highest f1-score with 0.58 which is the 
 After fine tuning the model, I found that the top 3 most important features that impacts a customer completing an offer is the time taken to act on it, the customer's income and the year the customer became a member.
 
 ## Medium Article
-For a more detailed version on the project, please visit 
+For a more detailed version on the project, please visit https://medium.com/@pa.allan10/starbucks-rewards-mobile-app-a-udacity-capstone-project-5e4a7451667a
 
 ## Acknowledgements
 I would like to express my since thanks to Udacity for all their guidance and resources for the Data Science Nano Degree Program.
