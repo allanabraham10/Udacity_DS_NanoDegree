@@ -1,8 +1,4 @@
-# Udacity_DS_NanoDegree
-This is a repository for the projects I had to work on whilst completing a Nano Degree course from Udacity
-
-Project 1:
-AirBnB Seattle Dataset
+# AirBnB Seattle Dataset
 
 Medium Blog:
 https://medium.com/@pa.allan10/seattle-airbnb-dataset-insights-cef8acc069e2
